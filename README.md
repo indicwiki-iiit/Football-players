@@ -55,7 +55,11 @@ This repository contains the details and data under TeWiki Project for Football 
 > Github folder Link:  
 
 This file contains code for reading the dataset and generating a pickle file
-
+## sample article
+> Github folder Link:
+This is the sample for male football players 
+> Github folder Link:
+This is the sample for female football players 
 ## genXML.py
 > Github folder Link: 
 
