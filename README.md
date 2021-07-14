@@ -7,6 +7,7 @@ Create virtual environment in the project folder using the following commands.
 
 $ pip install virtualenv
 $ virtualenv -p python3.7 venv
+
 After the successful creation of virtual environment (venv), clone the repository or download the zip folder of the project and extract it into the project folder.
 
 Activate the virtual environment and headover to install the dependencies by following command.
