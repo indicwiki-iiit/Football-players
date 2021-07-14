@@ -33,3 +33,10 @@ This repository contains the details and data under TeWiki Project for Football 
 
 - This folder contains the templates that are used for article generation
   - playerstemplate.j2 -- Contains the final Jinja2 Template for the article generation.
+## Data
+
+> Github folder Link: 
+
+* football_players_fina_dataset.csv-- This is the dataset for the Indian artists with all the attributes for them
+
+* female_players_dataset(final).csv-- This is the filmography details for the movie artists with Oscar awards.
