@@ -51,3 +51,16 @@ This repository contains the details and data under TeWiki Project for Football 
 
 * clubname_scraping.py-- This is the sraping code used for extracting clubname of a player.
 
+## Converting _to_pickle.py:
+Github file Link: 
+
+This file contains code for reading the dataset and generating a pickle file
+
+## genXML.py
+Github file Link: 
+
+This file used in importing the standard format of xml of male foot ball players.
+Github file Link: 
+
+This file used in importing the standard format of xml of female football players.
+
