@@ -70,8 +70,16 @@ This pdf file is about final report of the team regarding IndicWiki Summer Inter
 ## render.py
 >Github file Link:
 
-This is the code used for rendering the foot ball players articles using jinja2 template named playerstemplate.j2 file in templates folder.
+This is the code used for rendering the football players articles using jinja2 template named playerstemplate.j2 file in templates folder.
 >Github file Link:
 
-This is the code used for rendering the foot ball players articles using jinja2 template named .j2 file in templates folder.
+This is the code used for rendering the football players articles using jinja2 template named .j2 file in templates folder.
+
+## readData.py
+>Github file Link: 
+
+This contains all python code for generating football players sweetviz report,pickle and this the final code used for rendering the articles.
+>Github file Link: 
+
+This contains all python code for generating football players sweetviz report,pickle and this the final code used for rendering the articles.
 
