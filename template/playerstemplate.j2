@@ -1,0 +1,235 @@
+{% macro infobox()  -%} 
+		
+		{{- "{{infobox football biography" -}}
+		{{- '\n' -}}
+       {{ '|name	       ={}'.format(n)  }}
+       {{- '\n' -}}
+       {%- if img!='1' -%}
+      {{ '|image        ={}'.format(img) }} 
+      {%- endif -%}
+       {{-'\n'-}}
+       {{ '|fullname	   ={}'.format(full_name)  }}
+       {{- '\n' -}}
+       {{'|birth_date	 ={}'.format(dob)}}
+       {{- '\n' -}}
+       {{'|birth_place	  = {}'.format(place_of_birth)}}
+       {{- '\n' -}}
+       {{'|height 	      = {}'.format(height_cm)}}
+       {{- '\n' -}}
+       
+       {{ '|position  		={}'.format(positions)}}
+
+       {{- '\n' -}}
+        
+        {{'|currentclub   = {}'.format(club)}}
+        {{- '\n' -}}
+        {{'|clubnumber    ={}'.format(team_jersey_num)}}
+        {{- '\n' -}}
+       
+      
+        {{'|nationalteam1    ={}'.format(team) }}
+        {{- '\n' -}}
+        {{'As of may fifa 2021 index |'}}
+        
+		 
+		       
+      
+  {{- '}}' -}}
+	{{- '\n' }}
+{%- endmacro -%}
+
+{%- macro introduction(n,N_N,dob,nationality,full_name,s_name,club_joined,club,player_positions,height_cm,weight_kg,team_jersey_num,preferred_foot,i_r,tags) -%}
+	
+{{n}} ({{N_N}}) (జననం {{dob}})  [[{{nationality}}]] దేశానికి చెందిన [[ఫుట్‌బాల్]] క్రీడాకారుడు. ఇతని పూర్తిపేరు {{full_name}}. ఇతన్ని  {{s_name}} అని కూడా పిలుస్తారు. 
+
+{%- if club_joined!='nan' -%}
+{{- ' {} {} కి {} నుంచి ఆడుతున్నాడు. '.format(s_name,club,club_joined) -}} 
+{%- endif -%}
+{%- if club_joined=='nan' -%}
+{{- ' ఇతను  ప్రస్తుతం  {}  క్లబ్ కి ఆడుతున్నాడు. '.format(club) -}} 
+{%- endif -%}
+ఇతను ఫుట్‌బాల్ ఆటలో {{player_positions}} స్థానాల్లో ఆడతాడు. {{s_name}} ఎత్తు  {{height_cm}}
+సెంటీమీటర్లు, బరువు  {{weight_kg}} కేజీలు.  ఇతని జెర్సీ సంఖ్య {{team_jersey_num}}. {{s_name}}  
+ఆటలో కిక్కింగ్ కోసం {{preferred_foot}} కాలిని ఎక్కువగా ఎంచుకుంటాడు. ఇతనికి ఫిఫా ప్రకారం అంతార్జాతీయ ఖ్యాతిలో {{i_r}}/5 రేటింగ్ ఉంది.
+
+{%- if tags!='nan' -%}
+{{- ' అలాగే {}ని  ఫుట్‌బాల్ ఆటలో {} వంటి పలురకాల పేర్లతో  పిలుస్తుంటారు.'.format(s_name,tags) -}} 
+{%- endif -%}<ref>https://www.transfermarkt.com/lionel-messi/erfolge/spieler/28003</ref> 
+{%- endmacro -%}
+{%- macro personal_life(n,birth_place,dob) -%}
+{{'\n'}}
+==వ్యక్తిగత జీవితం==
+{#{%- set title_line=[
+                  s_name+ ' '+birth_place+  ' లో ' +dob+ ' న జన్మించాడు.',
+                 s_name+ ' ' +dob+ ' న '+birth_place+' లో జన్మించాడు.'
+                ] | random
+  {{title_line}}
+  -%}#}
+{%- if birth_place!='nan' -%}
+{{- '{} {} లో  {}న జన్మించాడు.
+'.format(n,birth_place,dob) -}}
+{%- endif -%}
+{%- if birth_place =='nan' -%}
+{{- '{} {} న జన్మించాడు.'.format(n,dob) -}}
+{%- endif -%}
+{%- endmacro -%}
+{{'\n'}}
+{%- macro early_life(age_at_debut,debut,coach_at_debut,debut_club,year) -%}
+{{'\n'}}
+==క్రీడా జీవితం==
+{{'\n'}}
+{%- if debut!='nan' -%}
+===ప్రారంభ రోజులు===
+{{'\n'}}
+{%- if age_at_debut!='nan' -%}
+ఇతనికి  {{age_at_debut}}  వయస్సు ఉన్నప్పుడు, {{coach_at_debut}} అనే కోచ్ నుంచి శిక్షణ తీసుకొని {{debut_club}} పోటీలో {{year}} సంవత్సరంలో మొట్టమొదటి సారి ఫుట్‌బాల్ ఆటలో పాల్గొన్నాడు.
+{%- endif -%}
+{{'\n'}}
+ఇతను పోటీ చేసిన వివిధ పోటీల అరంగేట్రం వివరాలు ఈ క్రింది పట్టికలో చూడవచ్చు.
+{| class="wikitable" style="text-align:left"
+|+  అరంగేట్రం వివరాలు  
+|- 
+| '''పోటీ పేరు''' ||'''ఆడిన సంవత్సరం''' || '''కోచ్ పేరు''' || '''వయస్సు'''
+|-
+{%- for i in debut -%}
+|-            
+| '''{{i[0]}}''' || {{i[1]}} || {{i[2]}} || {{i[3]}} 
+{{'\n'}}
+{%- endfor -%}|}
+{%- endif-%}
+{%- endmacro -%}
+{{'\n'}}
+{%- macro club_career(n,club,positions,c_positions,club_joined,contract_valid_until,r_c,potential,overall_rating) -%}
+{{'\n'}}
+===క్లబ్ కెరీర్===
+{{n}} ప్రస్తుతం {{club}} క్లబ్​​​​​ కు {{positions}} స్థానాల్లో ఆడుతున్నాడు, కానీ ఎక్కువగా {{c_positions}} స్థానంలో ఆడుతాడు.
+{%- if club_joined!='nan' -%}
+{{- ' ఈ {} క్లబ్​​​​​లో ఇతను {} సంవత్సరం నుంచి ఆడుతున్నాడు.'.format(club,club_joined) -}}
+{%- endif -%}
+{%- if contract_valid_until!='nan' -%}
+{{- ' ఇతనికి  ఈ క్లబ్ తో  {} వరకు ఒప్పందం ఉంది.'.format(contract_valid_until) -}}
+{%- endif -%}
+{%- if r_c!='nan' -%}
+{{- ' ప్రస్తుతం ఇతని రిలీజ్-క్లాజ్ £{}  యూరోలు. '.format(r_c) -}} {%- endif -%}
+ఇతనికి  ఫిఫాలో {{potential}} పొటెన్షియల్ తో మొత్తం రేటింగ్ {{overall_rating}} ఉంది.
+{%- endmacro %}
+{%- macro international_carrer(n,nationality,national_career,national_team_position,m_jersey_num,highest_market_value,wage_euro) -%}
+{{'\n'}}
+===అంతర్జాతీయ కెరీర్===
+{{n}}  {{nationality}} దేశానికి చెందిన అంతర్జాతీయ ఫుట్‌బాల్ క్రీడాకారుడు.
+
+{%- if national_team_position!='nan' -%}{{- ' ఇతను ప్రస్తుతం {} జాతీయ జట్టుకు {} స్థానంలో ఆడుతున్నాడు.'.format(nationality,national_team_position) -}}
+{%- endif -%}
+{%- if m_jersey_num!='nan' -%}{{- ' ఇతను  {} సంఖ్య గల జెర్సీ ధరిస్తాడు.'.format(m_jersey_num) -}}
+{%- endif -%}
+
+{%- if highest_market_value!='nan' -%}{{- ' ఇతని ఉచ్చిష్ట మార్కెట్ విలువ {}.'.format(highest_market_value) -}}
+{%- endif -%}
+{%- if wage_euro!='nan' -%}{{- ' ఇతను {}  యూరోల వేతనం తీసుకుంటాడు.'.format(wage_euro) -}}
+{%- endif -%}
+{{'\n'}}
+{%- if national_career!='nan' -%}
+
+ఇతను ఆడిన వివిధ జాతీయ జట్టుల వివరాలు ఈ క్రింది పట్టికలో చూడవచ్చు.
+{| class="wikitable" style="text-align:left"
+|+  జాతీయ జట్టుల వివరాలు  
+| '''జాతీయ జట్టు''' ||''' అరంగేట్రం'''  ||'''ప్రదర్శనలు '''||''' గోల్స్''' 
+|-
+{%- for i in national_career -%}
+|-            
+| '''{{i[0]}}''' || {{i[1]}} || {{i[2] }} || {{i[3]}} 
+{{'\n'}}
+{%- endfor -%}|}
+{%- endif -%}
+{%- endmacro -%}
+{{'\n'}}
+{%- macro playing_style(player_positions,preferred_foot,skill_movies,w_f,body_type,player_traits) -%}
+{{'\n'}}
+==ఆట విధానం==
+ఇతని ఆట తీరు విషయానికి వస్తే ఇతను {{player_positions}} స్థానాల్లో ఎక్కువగా ఆడుతుంటాడు. ఇతను ఆటలో కిక్కింగ్ కోసం {{preferred_foot}} కాలిని ఎక్కువగా ఉపయోగిస్తాడు. ఇతని నైపుణ్య కదలికలకు  {{skill_moves}}/5  రేటింగ్ వచ్చింది,  అలాగే బలహీనమైన పాదంతో స్ట్రైకింగ్ కి (weak-foot) {{w_f}}/5 రేటింగ్ ఉంది. ఇతని శారీరక శైలి {{body_type}}.
+{%- if player_traits!='nan' -%}{{- ' ఇతనికి  {} వంటి లక్షణాలు ఉన్నాయి.'.format(player_traits) -}}
+{%- endif -%}
+{%- endmacro -%}
+{{'\n'}}
+{%- macro career_stats(n,ball_control,stats,dribbling,marking,slide_tackle,stand_tackle,aggression,reactions,interception ,vision,composure,acceleration,stamina,strength,balance,sprint_speed,agility,jumping) -%}
+{{'\n'}}
+==కెరీర్ రేటింగ్స్==
+{{'\n'}}
+===బాల్ స్కిల్స్===  
+బాల్ స్కిల్స్ రేటింగ్ అనేది ఒక క్రీడాకారుడు బంతి నియంత్రణ  చేస్తున్న  విధానాన్ని తెలుపుతుంది. {{s_name}}కి  బంతి నియంత్రణ, డ్రిబ్లింగ్లో {{ball_control}}, {{dribbling }}  రేటింగులు  ఉన్నాయి.
+<ref>https://sofifa.com/</ref> 
+===డిఫెన్స్===  
+డిఫెన్స్ రేటింగ్ అనేది  ప్రత్యర్థిని ఎలా ఎదురుకుంటాడో తెలుపుతుంది. ఇతనికి 
+ {%- if marking!='nan' -%}{{-' మార్కింగ్ లో {}, '.format(marking)-}}
+{%- endif -%} &nbsp;స్లయిడ్ ట్యాకిల్ లో {{slide_tackle}},  స్టాండ్ ట్యాకిల్ లో  {{stand_tackle}}  రేటింగులు ఉన్నాయి.
+===మెంటల్ స్టేట్===  
+ఈ రేటింగ్  {{n }} మెంటల్ స్టేట్ గురించి తెలుపుతుంది. అగ్రెషన్  {{ aggression}}, రియాక్షన్స్  {{reactions}}, ఇంట్రసెప్షన్  {{interception}}, విషన్ {{vision}}, కంపోషర్ {{composure}} రేటింగులు ఉన్నాయి.
+===ఫీజికల్ స్టేట్=== 
+ఫీజికల్ స్టేట్ అనేది {{n}} బలాలను  తెలుపుతుంది. యాక్సిలరేషన్ {{acceleration}},  స్టామినా {{stamina}}, స్ట్రెన్త్ {{strength}}, బ్యాలెన్స్ {{balance}},  స్ప్రింట్ స్పీడ్  {{sprint_speed}}, అజిలిటీ {{agility}}, జంపింగ్ {{jumping}} రేటింగులు ఉన్నాయి.
+{{'\n'}}
+{%- if stats!='nan' -%}
+{| class="wikitable" style="text-align:left"
+|+  వివిధ పోటీలకు సంబంధించిన  గణాంకాలు 
+|-
+| '''పోటీ పేరు''' || '''ప్రదర్శనలు''' || '''గోల్స్''' || '''అసిస్ట్లు'''|| '''యెల్లో కార్డ్స్''' || '''సెకండ్ యెల్లో కార్డ్స్''' || '''రెడ్ కార్డ్స్''' || '''ఆడిన సమయం(నిమిషాలు)'''
+|-
+{%- for i in stats -%}
+|-            
+| '''{{i[0]}}''' || {{i[1]}} || {{i[2] }} || {{i[3]}} || {{i[4]}} || {{i[5]}} || {{i[6]}} || {{i[7]}}
+{{'\n'}}
+{%- endfor -%}|}
+{%- endif -%}
+{%- endmacro -%}
+{% macro award(awards,l_list,number,n)%} 
+
+==అవార్డులు==
+{{'\n'}}
+{%- if awards!='nan' -%}  
+{% set count = namespace(value=1) %} 
+ట్రాన్సఫర్మార్కెట్ ప్రకారం {{n}} గెలుచుకున్న వివిధ అవార్డుల జాబితా కింద ఇవ్వబడ్డాయి.
+{| class="wikitable" style="text-align:left"
+|+  వివిధ అవార్డుల జాబితా<ref>https://www.transfermarkt.com/lionel-messi/erfolge/spieler/28003</ref>
+|-
+|'''S.NO'''||'''అవార్డులు'''||'''సంఖ్య''' 
+|-
+{%- for k,v in awards.items() -%}
+|-           
+|{{count.value}}|| {{k}} || {{v}} 
+{% set count.value = count.value + 1 %}
+
+{%- endfor -%}|}
+{%- endif-%}
+{%- endmacro -%}
+ 
+{% macro ref()%}
+==మూలాలు==
+{{'{{reflist}}'}}
+'''సూచన:పైన ఇవ్వబడిన వివరాలన్నీ 15 జూన్, 2021 తారీఖున సంగ్రహించబడ్డాయి.'''
+{%- endmacro -%}
+
+{% macro cat(nationality)%}
+
+{{"[[వర్గం:{}]]".format(nationality)}}
+{{"[[వర్గం:ఫిఫా]]"}}
+{{"[[వర్గం:తెవికీ ఫుట్‌బాల్ క్రీడాకారులు]]"}}
+{{"[[వర్గం:ఫుట్‌బాల్ క్రీడాకారులు]]"}}
+{{"[[category:క్రీడాకారులు]]"}}
+{{"[[category:ఆటలు]]"}}
+{%- endmacro -%}
+{# Function Calls Below#}
+
+{{- infobox() -}}
+{{ introduction(n,N_N,dob,nationality,full_name,s_name,club_joined,club,player_positions,height_cm,weight_kg,team_jersey_num,preferred_foot,i_r,tags) -}}
+{{ personal_life
+(n,birth_place,dob) -}}
+{{ early_life(age_at_debut,debut,coach_at_debut,debut_club,year) -}}
+{{  club_career(n,club,positions,c_positions,club_joined,contract_valid_until,r_c,potential,overall_rating) -}}
+{{  international_carrer(n,nationality,national_career,national_team_position,m_jersey_num,highest_market_value,wage_euro) -}}
+{{  playing_style(player_positions,preferred_foot,skill_movies,w_f,body_type,player_traits)-}}
+{{ career_stats(n,ball_control,stats,dribbling,marking,slide_tackle,stand_tackle,aggression,reactions,interception ,vision,composure,acceleration,stamina,strength,balance,sprint_speed,agility,jumping) -}}
+{{ award(awards,l_list,number,n) -}}
+{{ ref() }}
+{{ cat(nationality)-}}
+
+ 
+
