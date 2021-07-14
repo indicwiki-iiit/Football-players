@@ -63,4 +63,15 @@ This file used in importing the standard format of xml of male foot ball players
 > Github folder Link: 
 
 This file used in importing the standard format of xml of female football players.
+## IndicWiki Summer Internship - [FOOTBALL_PLAYERS].pdf:
+
+> Github file Link: 
+This pdf file is about final report of the team regarding IndicWiki Summer Internship.
+## render.py
+>Github file Link:
+
+This is the code used for rendering the foot ball players articles using jinja2 template named playerstemplate.j2 file in templates folder.
+>Github file Link:
+
+This is the code used for rendering the foot ball players articles using jinja2 template named .j2 file in templates folder.
 
