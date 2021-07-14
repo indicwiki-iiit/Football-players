@@ -40,3 +40,12 @@ This repository contains the details and data under TeWiki Project for Football 
 * football_players_fina_dataset.csv-- This is the dataset for the football players with all the attributes for them.
 
 * female_players_dataset(final).csv-- This is the dataset for female football players with all the attributes for them.
+
+## Scraping 
+
+> Github folder Link: 
+
+* scraping.py-- This is the sraping code used for extracting national career,birth place,highest market value,full name,debuts,tags details.
+
+* scraping_female.py-- This is the sraping code used for extracting all the attributes details.
+
