@@ -49,3 +49,5 @@ This repository contains the details and data under TeWiki Project for Football 
 
 * scraping_female.py-- This is the sraping code used for extracting all the attributes details.
 
+* clubname_scraping.py-- This is the sraping code used for extracting clubname of a player.
+
