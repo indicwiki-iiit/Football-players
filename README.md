@@ -30,7 +30,7 @@ requirements.txt comes along with the Project Directory.
 
 This repository contains the details and data under TeWiki Project for Football players domain.
 ### Template 
-playerstemplate.j2 -- Contains the final Jinja2 Template for the male players article generation.
+* playerstemplate.j2 -- Contains the final Jinja2 Template for the male players article generation.
 
 ### Data
 * players.csv-- This is the dataset for the football players with all the attributes for them.
