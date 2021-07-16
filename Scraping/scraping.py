@@ -11,6 +11,7 @@ import math as m
 PATH=r"C:\Users\nallu\Dropbox\My PC (LAPTOP-1C2T7QTM)\Downloads\chromedriver.exe"
 driver=webdriver.Chrome(PATH)
 s2='//*[@id="main"]/div[11]/div[2]/div[2]/table/tbody/tr[2]/td[3]'
+#this function scrapes stats information of a player from the website
 def read_stats(stats_url):
     driver.get(stats_url)
     s='//*[@id="yw2"]/table/tbody/tr[1]/td[3]'
@@ -28,6 +29,7 @@ def read_stats(stats_url):
             col.append(value)
         tab.append(col)
     return tab
+#this function scrapes national career information of a player from the website
 def read_national_career(s):
     rows=len(driver.find_elements_by_xpath('//*[@id="main"]/div[11]/div[2]/div[3]/table/tbody/tr'))
     cols=len(driver.find_elements_by_xpath('//*[@id="main"]/div[11]/div[2]/div[3]/table/tbody/tr[1]/td'))
@@ -43,6 +45,7 @@ def read_national_career(s):
             col.append(value)
         tab.append(col)
     return tab
+#this function scrapes debuts information of a player from the website
 def read_debus(debu):
     s='//*[@id="main"]/div[11]/div[1]/div/div[2]/table/tbody/tr[3]/td[4]'
    # //*[@id="main"]/div[11]/div[1]/div/div[2]/table/tbody/tr[6]/td[2]/a
