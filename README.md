@@ -22,7 +22,7 @@ requirements.txt comes along with the Project Directory.
 
 * For generating an article, one need: players(dataset), render.py, playerstemplate and genXML.py. Make sure that these files are available.
 
-* Running the readDATA.py loads the dataset generates the sweetviz report and pickleDF.py
+* Running the readDATA.py loads the dataset generates the sweetviz report and pickleDF.pkl
 
 * Running the genXML.py initialises all the functions necessary for XML generation  
 
@@ -37,40 +37,34 @@ This repository contains the details and data under TeWiki Project for Football 
 
 ### Scraping 
 
-* scraping.py-- This is the sraping code used for extracting national career,birth place,highest market value,full name,debuts,tags details.
+* scraping.py-- This is the scraping code used for extracting national career,birth place,highest market value,full name,debuts,tags details.
 
-* clubname_scraping.py-- This is the sraping code used for extracting clubname of a player.
+* clubname_scraping.py-- This is the scraping code used for extracting clubname of a player.
 
-* Extra_scraping.py-- This is the sraping code used for additional data  of a player.
+* Extra_scraping.py-- This is the scraping code used for additional data  of a player.
 
-### Sample article 
+### Male Football players sample article
+
 * This is the sample article for male football players 
-
-* This is the sample for female football players 
+ 
 ### genXML.py
   
 * This file used in importing the standard format of xml of male football players.
- 
-
-* This file used in importing the standard format of xml of female football players.
 
 ### render.py
 
 * This is the code used for rendering the football players articles using jinja2 template named playerstemplate.j2 file in male football players folder.
 
-* This is the code used for rendering the football players articles using jinja2 template named .j2 file in female football players folder.
-
 ### readData.py
-* This contains all python code for generating football players sweetviz report,pickle and this the final code used for rendering the articles.
 
-* This contains all python code for generating football players sweetviz report,pickle and this the final code used for rendering the articles.
+* This contains all python code for generating football players sweetviz report,pickle file.
 
 ## Guide to generate female football players articles and corresponding XML files
 * Clone the repository into the local system.
 
 * For generating an article, one need: players(dataset), render1.py, femaleplayers_template.j2 and genXML1.py. Make sure that these files are available.
 
-* Running the readDATA1.py loads the dataset generates the sweetviz report and pickleDF.py
+* Running the readDATA1.py loads the dataset generates the sweetviz report and female_plyrsDF.pkl
 
 * Running the genXML1.py initialises all the functions necessary for XML generation  
 
@@ -83,19 +77,19 @@ This repository contains the details and data under TeWiki Project for Football 
 ### Data
 * female_players_dataset(final).csv-- This is the dataset for female football players with all the attributes for them.
 ### Scraping 
-* scraping_female.py This is the sraping code used for extracting all the attributes of a player.
+* scraping_female.py This is the scraping code used for extracting all the attributes of a player.
 
 ### Sample article 
-* This is the sample for female football players 
+* This is the sample article for female football players 
 ### genXML1.py
-* This file used in importing the standard format of xml of female football players.
+* This file is used in importing the standard format of xml of female football players.
 
 ### render1.py
 * This is the code used for rendering the female football players articles using jinja2 template named femaleplayers_template.j2 file in female football players folder.
 ### readData1.py 
-* This contains all python code for generating female football players sweetviz report,pickle.
+* This contains all python code for generating female football players sweetviz report,pickle file.
 ### IndicWiki Summer Internship - [FOOTBALL_PLAYERS].pdf(report):
-* This pdf file is about final report of the team regarding IndicWiki Summer Internship.
-# requirements 
+* This pdf file is about final report of our team regarding IndicWiki Summer Internship.
+### requirements 
 * This contains all the packages and libraries that are necessary for building this project.
 
