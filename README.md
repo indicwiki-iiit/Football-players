@@ -29,13 +29,17 @@ requirements.txt comes along with the Project Directory.
 This repository contains the details and data under TeWiki Project for Football players domain.
 ## Templates
 
+> Github folder Link: https://github.com/indicwiki-iiit/Football-players/tree/main/template
+ 
 > Github folder Link: 
 
 - This folder contains the templates that are used for article generation
-  - playerstemplate.j2 -- Contains the final Jinja2 Template for the article generation.
+  - playerstemplate.j2 -- Contains the final Jinja2 Template for the male players article generation.
+  - - female players.j2 -- Contains the final Jinja2 Template for the female players article generation.
 ## Data
 
 > Github folder Link: 
+> Github folder Link:
 
 * football_players_fina_dataset.csv-- This is the dataset for the football players with all the attributes for them.
 
@@ -43,7 +47,8 @@ This repository contains the details and data under TeWiki Project for Football 
 
 ## Scraping 
 
-> Github folder Link: 
+> Github folder Link:https://github.com/indicwiki-iiit/Football-players/tree/main/FOOTBALL%20MALE%20PLAYERS/Scraping%20files 
+> Github file Link:https://github.com/indicwiki-iiit/Football-players/blob/main/FOOTBALL%20FEMALE%20PLAYERS/scraping_female.py
 
 * scraping.py-- This is the sraping code used for extracting national career,birth place,highest market value,full name,debuts,tags details.
 
@@ -51,14 +56,20 @@ This repository contains the details and data under TeWiki Project for Football 
 
 * clubname_scraping.py-- This is the sraping code used for extracting clubname of a player.
 
-## Converting _to_pickle.py:
-> Github folder Link:  
+* Extra_scraping.py-- This is the sraping code used for additional data  of a player.
 
-This file contains code for reading the dataset and generating a pickle file
+## Converting _to_pickle.py:
+> Github folder Link:https://github.com/indicwiki-iiit/Football-players/blob/main/FOOTBALL%20MALE%20PLAYERS/playerDF.pkl
+
+This file contains code for reading the dataset and generating a pickle file for male players
+
+> Github folder Link: https://github.com/indicwiki-iiit/Football-players/blob/main/FOOTBALL%20FEMALE%20PLAYERS/female_plyrsDF.pkl 
+
+This file contains code for reading the dataset and generating a pickle file for female players
 ## sample article
-> Github folder Link:
+> Github folder Link:https://github.com/indicwiki-iiit/Football-players/blob/main/FOOTBALL%20MALE%20PLAYERS/Male%20Football%20Players%20Sample%20Article.pdf
 This is the sample for male football players 
-> Github folder Link:
+> Github folder Link:https://github.com/indicwiki-iiit/Football-players/blob/main/FOOTBALL%20FEMALE%20PLAYERS/Female%20Football%20players%20Sample%20Article.pdf
 This is the sample for female football players 
 ## genXML.py
 > Github folder Link: 
