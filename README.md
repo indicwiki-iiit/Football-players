@@ -37,8 +37,6 @@ playerstemplate.j2 -- Contains the final Jinja2 Template for the male players ar
 
 ### Scraping 
 
-> Github folder Link:https://github.com/indicwiki-iiit/Football-players/tree/main/FOOTBALL%20MALE%20PLAYERS/Scraping%20files 
-> 
 * scraping.py-- This is the sraping code used for extracting national career,birth place,highest market value,full name,debuts,tags details.
 
 * clubname_scraping.py-- This is the sraping code used for extracting clubname of a player.
