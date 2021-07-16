@@ -44,7 +44,8 @@ This repository contains the details and data under TeWiki Project for Football 
 * Extra_scraping.py-- This is the scraping code used for additional data  of a player.
 
 ### Male Football players sample article
-
+> Github folder Link: https://github.com/indicwiki-iiit/Football-players/blob/main/FOOTBALL%20MALE%20PLAYERS/Male%20Football%20Players%20Sample%20Article.pdf
+> 
 * This is the sample article for male football players 
  
 ### genXML.py
@@ -79,7 +80,9 @@ This repository contains the details and data under TeWiki Project for Football 
 ### Scraping 
 * scraping_female.py This is the scraping code used for extracting all the attributes of a player.
 
-### Sample article 
+### Female Football players sample article
+> Github folder Link: https://github.com/indicwiki-iiit/Football-players/blob/main/FOOTBALL%20FEMALE%20PLAYERS/Female%20Football%20players%20Sample%20Article.pdf
+> 
 * This is the sample article for female football players 
 ### genXML1.py
 * This file is used in importing the standard format of xml of female football players.
