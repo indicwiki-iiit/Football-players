@@ -96,6 +96,6 @@ This repository contains the details and data under TeWiki Project for Football 
 * This contains all python code for generating female football players sweetviz report,pickle.
 ### IndicWiki Summer Internship - [FOOTBALL_PLAYERS].pdf(report):
 * This pdf file is about final report of the team regarding IndicWiki Summer Internship.
-# requirments 
+# requirements 
 * This contains all the packages and libraries that are necessary for building this project.
 
