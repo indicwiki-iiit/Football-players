@@ -14,6 +14,7 @@ import time
 #path of chromedriver.exe
 PATH=r"C:\Users\nallu\Dropbox\My PC (LAPTOP-1C2T7QTM)\Downloads\chromedriver.exe"
 driver=webdriver.Chrome(PATH)
+#this function scrapes career stats information of a player from the website
 def read_extra_stats(stats_url):
     #//*[@id="yw2"]/table/tbody/tr[1]/td[2]
     driver.get(stats_url)
