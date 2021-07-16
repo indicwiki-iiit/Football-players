@@ -29,9 +29,7 @@ def main():
         driver.get(url)
         time.sleep(1)
         cc='Current club:'
-        #//*[@id="main"]/div[11]/div[1]/div[2]/div[2]/div[2]/div[2]/table/tbody/tr[10]/th
-        #//*[@id="main"]/div[11]/div[1]/div[2]/div[2]/div[2]/div[2]/table/tbody/tr[10]/th
-        #//*[@id="main"]/div[11]/div[1]/div[2]/div[2]/div[2]/div[2]/table/tbody/tr[10]/td
+        #scraping clubname of the player from the website
         try:
             r10=driver.find_element_by_xpath('//*[@id="main"]/div[11]/div[1]/div[2]/div[2]/div[2]/div[2]/table/tbody/tr[10]/th').text
             r9=driver.find_element_by_xpath('//*[@id="main"]/div[11]/div[1]/div[2]/div[2]/div[2]/div[2]/table/tbody/tr[9]/th').text
