@@ -14,6 +14,7 @@ import time
 #path of chromedriver.exe
 PATH=r"C:\Users\nallu\Dropbox\My PC (LAPTOP-1C2T7QTM)\Downloads\chromedriver.exe"
 driver=webdriver.Chrome(PATH)
+#this function scrapes stats information of a player from the website
 def read_stats(url):
     s='/html/body/main/div/div/div[2]/div[4]/div[6]/div/div/p[1]/span/span'
     col,cols=[],[]
@@ -39,6 +40,7 @@ def read_stats(url):
     return cols
             
 def main():
+    
     fplyrs=pd.read_csv(r'C:\Users\nallu\Dropbox\My PC (LAPTOP-1C2T7QTM)\Downloads\female_links.csv')
     urls=fplyrs['links']
     rows=[]
@@ -46,6 +48,7 @@ def main():
         url=urls[i]
         driver.get(url)
         time.sleep(5)
+        #below statements scrapes various attributes of female players from the website
         name=driver.find_element_by_xpath('/html/body/main/div/div/div[2]/div[2]/div[1]/div[1]/div[2]/h1').text
         nation=driver.find_element_by_xpath('/html/body/main/div/div/div[2]/div[2]/div[1]/div[1]/div[2]/h2/a[2]').text
         height=driver.find_element_by_xpath('/html/body/main/div/div/div[2]/div[2]/div[2]/div/div/p[1]/span/span[1]').text
