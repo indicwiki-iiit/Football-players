@@ -43,60 +43,49 @@ playerstemplate.j2 -- Contains the final Jinja2 Template for the male players ar
 
 * female_players_dataset(final).csv-- This is the dataset for female football players with all the attributes for them.
 
-## Scraping 
+### Scraping 
 
 > Github folder Link:https://github.com/indicwiki-iiit/Football-players/tree/main/FOOTBALL%20MALE%20PLAYERS/Scraping%20files 
 > 
-> Github file Link:https://github.com/indicwiki-iiit/Football-players/blob/main/FOOTBALL%20FEMALE%20PLAYERS/scraping_female.py
-> 
 * scraping.py-- This is the sraping code used for extracting national career,birth place,highest market value,full name,debuts,tags details.
-
-* scraping_female.py-- This is the sraping code used for extracting all the attributes details.
 
 * clubname_scraping.py-- This is the sraping code used for extracting clubname of a player.
 
 * Extra_scraping.py-- This is the sraping code used for additional data  of a player.
 
-## Converting _to_pickle.py:
-> Github folder Link:https://github.com/indicwiki-iiit/Football-players/blob/main/FOOTBALL%20MALE%20PLAYERS/playerDF.pkl
-> 
-This file contains code for reading the dataset and generating a pickle file for male players
-
-> Github folder Link: https://github.com/indicwiki-iiit/Football-players/blob/main/FOOTBALL%20FEMALE%20PLAYERS/female_plyrsDF.pkl
->  
-This file contains code for reading the dataset and generating a pickle file for female players
-## sample article
+### Sample article
 > Github folder Link:https://github.com/indicwiki-iiit/Football-players/blob/main/FOOTBALL%20MALE%20PLAYERS/Male%20Football%20Players%20Sample%20Article.pdf
 > 
-This is the sample for male football players 
+This is the sample article for male football players 
 
 > Github folder Link:https://github.com/indicwiki-iiit/Football-players/blob/main/FOOTBALL%20FEMALE%20PLAYERS/Female%20Football%20players%20Sample%20Article.pdf
 > 
 This is the sample for female football players 
-## genXML.py
-> Github folder Link: 
-
-This file used in importing the standard format of xml of male foot ball players.
+### genXML.py
+> Github folder Link:
+>  
+This file used in importing the standard format of xml of male football players.
 > Github folder Link: 
 
 This file used in importing the standard format of xml of female football players.
-## IndicWiki Summer Internship - [FOOTBALL_PLAYERS].pdf:
 
-> Github file Link: 
-This pdf file is about final report of the team regarding IndicWiki Summer Internship.
-## render.py
+### render.py
+>Github file Link:
+>
+This is the code used for rendering the football players articles using jinja2 template named playerstemplate.j2 file in male football players folder.
 >Github file Link:
 
-This is the code used for rendering the football players articles using jinja2 template named playerstemplate.j2 file in templates folder.
->Github file Link:
-
-This is the code used for rendering the football players articles using jinja2 template named .j2 file in templates folder.
+This is the code used for rendering the football players articles using jinja2 template named .j2 file in female football players folder.
 
 ## readData.py
 >Github file Link: 
-
+>
 This contains all python code for generating football players sweetviz report,pickle and this the final code used for rendering the articles.
->Github file Link: 
-
+>Github file Link:
+> 
 This contains all python code for generating football players sweetviz report,pickle and this the final code used for rendering the articles.
+## IndicWiki Summer Internship - [FOOTBALL_PLAYERS].pdf(report):
+
+> Github file Link: 
+This pdf file is about final report of the team regarding IndicWiki Summer Internship.
 
