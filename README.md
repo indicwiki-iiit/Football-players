@@ -44,28 +44,28 @@ playerstemplate.j2 -- Contains the final Jinja2 Template for the male players ar
 * Extra_scraping.py-- This is the sraping code used for additional data  of a player.
 
 ### Sample article 
-This is the sample article for male football players 
+* This is the sample article for male football players 
 
-This is the sample for female football players 
+* This is the sample for female football players 
 ### genXML.py
   
-This file used in importing the standard format of xml of male football players.
+* This file used in importing the standard format of xml of male football players.
  
 
-This file used in importing the standard format of xml of female football players.
+* This file used in importing the standard format of xml of female football players.
 
 ### render.py
 
-This is the code used for rendering the football players articles using jinja2 template named playerstemplate.j2 file in male football players folder.
+* This is the code used for rendering the football players articles using jinja2 template named playerstemplate.j2 file in male football players folder.
 
-This is the code used for rendering the football players articles using jinja2 template named .j2 file in female football players folder.
+* This is the code used for rendering the football players articles using jinja2 template named .j2 file in female football players folder.
 
 ### readData.py
-This contains all python code for generating football players sweetviz report,pickle and this the final code used for rendering the articles.
+* This contains all python code for generating football players sweetviz report,pickle and this the final code used for rendering the articles.
 
-This contains all python code for generating football players sweetviz report,pickle and this the final code used for rendering the articles.
+* This contains all python code for generating football players sweetviz report,pickle and this the final code used for rendering the articles.
 # IndicWiki Summer Internship - [FOOTBALL_PLAYERS].pdf(report): 
-This pdf file is about final report of the team regarding IndicWiki Summer Internship.
+* This pdf file is about final report of the team regarding IndicWiki Summer Internship.
 
 ## Guide to generate female football players articles and corresponding XML files
 * Clone the repository into the local system.
@@ -88,16 +88,16 @@ This repository contains the details and data under TeWiki Project for Football 
 * scraping_female.py This is the sraping code used for extracting all the attributes of a player.
 
 ### Sample article 
-This is the sample for female football players 
+* This is the sample for female football players 
 ### genXML1.py
-This file used in importing the standard format of xml of female football players.
+* This file used in importing the standard format of xml of female football players.
 
 ### render1.py
-This is the code used for rendering the female football players articles using jinja2 template named femaleplayers_template.j2 file in female football players folder.
+* This is the code used for rendering the female football players articles using jinja2 template named femaleplayers_template.j2 file in female football players folder.
 ### readData1.py 
-This contains all python code for generating female football players sweetviz report,pickle.
+* This contains all python code for generating female football players sweetviz report,pickle.
 # IndicWiki Summer Internship - [FOOTBALL_PLAYERS].pdf(report):
-This pdf file is about final report of the team regarding IndicWiki Summer Internship.
+* This pdf file is about final report of the team regarding IndicWiki Summer Internship.
 # requirments 
-This contains all the packages and libraries that are necessary for building this project.
+* This contains all the packages and libraries that are necessary for building this project.
 
