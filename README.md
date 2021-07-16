@@ -48,8 +48,9 @@ This repository contains the details and data under TeWiki Project for Football 
 ## Scraping 
 
 > Github folder Link:https://github.com/indicwiki-iiit/Football-players/tree/main/FOOTBALL%20MALE%20PLAYERS/Scraping%20files 
+> 
 > Github file Link:https://github.com/indicwiki-iiit/Football-players/blob/main/FOOTBALL%20FEMALE%20PLAYERS/scraping_female.py
-
+> 
 * scraping.py-- This is the sraping code used for extracting national career,birth place,highest market value,full name,debuts,tags details.
 
 * scraping_female.py-- This is the sraping code used for extracting all the attributes details.
@@ -60,16 +61,19 @@ This repository contains the details and data under TeWiki Project for Football 
 
 ## Converting _to_pickle.py:
 > Github folder Link:https://github.com/indicwiki-iiit/Football-players/blob/main/FOOTBALL%20MALE%20PLAYERS/playerDF.pkl
-
+> 
 This file contains code for reading the dataset and generating a pickle file for male players
 
-> Github folder Link: https://github.com/indicwiki-iiit/Football-players/blob/main/FOOTBALL%20FEMALE%20PLAYERS/female_plyrsDF.pkl 
-
+> Github folder Link: https://github.com/indicwiki-iiit/Football-players/blob/main/FOOTBALL%20FEMALE%20PLAYERS/female_plyrsDF.pkl
+>  
 This file contains code for reading the dataset and generating a pickle file for female players
 ## sample article
 > Github folder Link:https://github.com/indicwiki-iiit/Football-players/blob/main/FOOTBALL%20MALE%20PLAYERS/Male%20Football%20Players%20Sample%20Article.pdf
+> 
 This is the sample for male football players 
+
 > Github folder Link:https://github.com/indicwiki-iiit/Football-players/blob/main/FOOTBALL%20FEMALE%20PLAYERS/Female%20Football%20players%20Sample%20Article.pdf
+> 
 This is the sample for female football players 
 ## genXML.py
 > Github folder Link: 
